@@ -1,210 +1,222 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CSS Grid resume starter</title>
-    <link href="index.css" rel="stylesheet">
-</head>
+    <link href="index.css" rel="stylesheet" />
+    <style>
+      body {
+      }
+      .loading {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: type 2s steps(50, end);
+      }
+      .loading2 {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: type2 2s steps(30, end);
+      }
+      .loading3 {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: type2 3.5s steps(30, end);
+      }
 
-<body>
+      @keyframes type {
+        from {
+          width: 0;
+        }
+      }
+      @keyframes type2 {
+        0% {
+          width: 0;
+        }
+        50% {
+          width: 0;
+        }
+        100% {
+          width: 100;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
     <main class="wrapper">
-        <section class="resume">
-            <section class="name">
-                <div class="intro">
-                    <h1 class="heading">
-                        First Last
-                    </h1>
-                    <h2 class="role">
-                        Software Engineer
-                    </h2>
-                </div>
-            </section>
-
-            <section class="image">
-                <img class="avatar" src="avatar.jpg" alt="grey human avatar">
-            </section>
-            <section class="about">
-                <hr />
-                <h2 class="section-name">
-                    About me
-                </h2>
-                <hr />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.
-                </p>
-            </section>
-            <section class="work">
-                <hr />
-                <h2 class="section-name">
-                    Work Experience
-                </h2>
-                <hr />
-                <h3 class="job-title">
-                    Front-End Software Developer
-                </h3>
-                <h4 class="institute">
-                    Car Company <span class="date">Apr 2016 - Sep 2019</span> · <span class="location">Munich,
-                        Germany</span>
-                </h4>
-                <ul class="details">
-                    <li>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur</li>
-                    <li>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore
-                    </li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore</li>
-
-                </ul>
-                <p class="company-blurb"></p>
-                <h3 class="job-title">
-                    Intermediate Software Engineer
-                </h3>
-                <h4 class="institute">Food Company <span class="date">Apr 2014 - June 2016</span> · <span
-                        class="location">Sichuan, China</span></h3>
-
-
-                    <ul class="details">
-                        <li>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur</li>
-                        <li>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                        </li>
-
-                    </ul>
-                    <h3 class="job-title">
-                        Junior Test Engineer
-                    </h3>
-                    <h4 class="institute">Building Company <span class="date">Feb 2012 - Apr 2015</span> · <span
-                            class="location">Christchurch, New Zealand</span></h4>
-                    <ul class="details">
-                        <li>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                        <li>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                        </li>
-
-                    </ul>
-                    <h3 class="job-title">
-                        Software Engineering Tutor
-                    </h3>
-                    <h4 class="institute">
-                        Cool University <span class="date">2011 Semester One</span> · <span class="location">Cooltown,
-                            New Zealand</span>
-                    </h4>
-                    <h3 class="job-title">
-                        Research Assistant
-                    </h3>
-                    <h4 class="institute">
-                        Rad University <span class="date">Nov 2011- Feb 2012</span> · <span class="location">Radtown,
-                            New Zealand</span>
-                    </h4>
-            </section>
-            <section class="education">
-                <hr />
-                <h2 class="section-name">
-                    Education
-                </h2>
-                <hr />
-                <h3 class="degree">
-                    Diploma in Lorem ipsum
-                </h3>
-                <h4 class="institute">
-                    Lorem University
-                    <span class="date">2010-2011</span> · <span class="location">USA</span>
-                </h4>
-
-                <p class="details">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea
-                    commodo consequat.
-                </p>
-                <h3 class="degree">
-                    Bachelor of Awesome with Honours
-                </h3>
-                <h4 class="institute">
-                    Lorem Bootcamp <span class="date">2006-2009</span> · <span class="location">NZ</span>
-                </h4>
-
-                <p class="details"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex
-                    ea
-                    commodo consequat.
-                </p>
-
-
-            </section>
-            <section class="certifications">
-                <hr />
-                <h2 class="section-name">
-                    Certifications
-                </h2>
-                <hr />
-                <p class="certification">
-                    Lorem ipsum
-                </p>
-                <p class="certification">
-                    Ut enim ad minim veniam
-                </p>
-                <p class="certification">
-                    Lorem ipsum </p>
-            </section>
-            <section class="skills">
-                <hr />
-                <h2 class="section-name">
-                    Skills
-                </h2>
-                <hr />
-                <div class="skilz"></div>
-                <p class="details technologies">Lorem ipsum · Ipsum · Lorem ipsum · Lorem ipsum · Ipsum · Lorem ipsum ·
-                    Lorem ipsum · Ipsum · Lorem ipsum ·
-                    Lorem ipsum · Ipsum · Lorem ipsum ·
-                    Lorem ipsum · Ipsum · Lorem ipsum ·
-                </p>
-                </p>
-            </section>
-            <section class="community">
-                <hr />
-                <h2 class="section-name">
-                    Community
-                </h2>
-                <hr />
-                <h4 class="institute">Lorem ipsum </h4>
-                <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <h4 class="institute">Lorem ipsum </h4>
-                <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <h4 class="institute">Lorem ipsum </h4>
-                <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </section>
-            <section class="hobbies">
-                <hr />
-                <h2 class="section-name">
-                    Hobbies
-                </h2>
-                <hr />
-                <div class="hobby-grid">
-                    <p class="hobby">Lorem ipsum</p>
-                    <p class="hobby">Lorem ipsum</p>
-                    <p class="hobby">Lorem ipsum </p>
-                    <p class="hobby">Lorem ipsum</p>
-                </div>
-            </section>
+      <section class="resume">
+        <section class="name">
+          <div class="intro">
+            <h1 class="heading loading2">
+              Nicholas Tang
+            </h1>
+            <h2 class="role loading3">
+              Front-End Developer
+            </h2>
+          </div>
         </section>
-    </main>
-</body>
 
+        <section class="image">
+          <img class="avatar" src="cat.jpeg" alt="grey human avatar" />
+        </section>
+        <section class="about">
+          <hr />
+          <h2 class="section-name">
+            About me
+          </h2>
+          <hr />
+          <p>To remember, to let go, and to move on</p>
+          <p class="">
+            Why don't you let people see the good in you? Because when people
+            see good, they expect good. And I don't want to have to live up to
+            anyone's expectations.
+          </p>
+        </section>
+        <section class="work">
+          <hr />
+          <h2 class="section-name">
+            Work Experience
+          </h2>
+          <hr />
+          <h3 class="job-title">
+            Front-End Software Developer
+          </h3>
+          <h4 class="institute">
+            Technology Community <span class="date">Aug 2019 - Sep 2020</span> ·
+            <span class="location">Hangzhou, China</span>
+          </h4>
+          <ul class="details">
+            <li>
+              王者荣耀 最强王者 哪吒 逐梦之翼
+            </li>
+            <li>王者荣耀 最强王者 庄周 云端筑梦师</li>
+            <li>
+              王者荣耀 最强王者 赵云 引擎之心
+            </li>
+          </ul>
+          <p class="company-blurb"></p>
+          <h3 class="job-title">
+            Front-End and Node Developer
+          </h3>
+          <h4 class="institute">
+            Science Company <span class="date">Aug 2018 - Jul 2019</span> ·
+            <span class="location">Hangzhou, China</span>
+          </h4>
+
+          <ul class="details">
+            <li>
+              Develop both of Node Service and Front-End
+            </li>
+          </ul>
+          <h3 class="job-title">
+            Front-End Software Developer
+          </h3>
+          <h4 class="institute">
+            Medical Company <span class="date">Feb 2015 - Apr 2018</span> ·
+            <span class="location">Hangzhou, China</span>
+          </h4>
+          <ul class="details">
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
+            </li>
+          </ul>
+        </section>
+        <section class="education">
+          <hr />
+          <h2 class="section-name">
+            Education
+          </h2>
+          <hr />
+          <h3 class="degree">
+            Graduate Diploma in Computer & Information Technology
+          </h3>
+          <h4 class="institute">
+            Zhejiang University of Science and Technology
+            <span class="date">2011-2015</span> ·
+            <span class="location">CHN</span>
+          </h4>
+
+          <p class="details">
+            Zhejiang University of Science and Technology (ZUST) is a
+            multi-disciplinary full-time regular university under the direct
+            guidance of Zhejiang Provincial Government, which focuses on
+            engineering with additional disciplines in arts, management,
+            science, and economics. Founded in 1980, it was initially known as
+            Hangzhou Industrial School Attached to Zhejiang University.
+            Combining the successful school-running experience of German
+            Universities of Applied Sciences（FH） with Chinese Characteristics,
+            ZUST explores to cultivate high quality internationalized talents
+            with innovative spirits and applied skills.
+          </p>
+          <h3 class="degree">
+            Bachelor of Computer & Information Technology
+          </h3>
+          <h4 class="institute">
+            University of Southern Queensland
+            <span class="date">2011-2015</span> ·
+            <span class="location">AUS</span>
+          </h4>
+
+          <p class="details">
+            After years of hard work and dedication, it is time to start your
+            next journey in life in your chosen career. As a graduate of USQ,
+            you are now an alumnus and we want to ensure that our relationship
+            with you continues beyond graduation.
+          </p>
+        </section>
+        <section class="certifications">
+          <hr />
+          <h2 class="section-name">
+            Certifications
+          </h2>
+          <hr />
+          <p class="certification">
+            System integration project management engineer
+          </p>
+        </section>
+        <section class="community">
+          <hr />
+          <h2 class="section-name">
+            Community
+          </h2>
+          <hr />
+          <h4 class="institute">Lorem ipsum</h4>
+          <p class="details">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+          <h4 class="institute">Lorem ipsum</h4>
+          <p class="details">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+          <h4 class="institute">Lorem ipsum</h4>
+          <p class="details">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+        </section>
+        <section class="hobbies">
+          <hr />
+          <h2 class="section-name">
+            Hobbies
+          </h2>
+          <hr />
+          <div class="hobby-grid">
+            <p class="hobby">NBA</p>
+            <p class="hobby">Premier League</p>
+            <p class="hobby">Music</p>
+            <p class="hobby">Suspense crime movie</p>
+            <p class="hobby">US TV series</p>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>

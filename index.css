@@ -22,7 +22,6 @@
     "about"
     "work"
     "education"
-    "skills"
     "certifications"
     "community"
     "hobbies";
@@ -101,7 +100,6 @@ p {
   margin-bottom: 0;
 }
 
-.community,
 .institute,
 .heading,
 .avatar {
@@ -175,7 +173,6 @@ p {
       "about about"
       "work work"
       "education education"
-      "skills skills"
       "certifications certifications"
       "hobbies hobbies"
       "community community";
@@ -200,7 +197,6 @@ p {
       "work work about"
       "work work education"
       "work work education"
-      "work work skills"
       "certifications hobbies community"
       "certifications hobbies community";
   }
